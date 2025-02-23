@@ -84,5 +84,3 @@ Bu proje, Expo kullanılarak geliştirilmiş bir React Native uygulamasıdır. U
    - Videonun ismini, açıklamasını güncelleyebilir veya videoyu silebilirsiniz.
    - 
 
----
-```
