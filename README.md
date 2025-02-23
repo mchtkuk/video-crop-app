@@ -10,8 +10,7 @@ Bu proje, Expo kullanılarak geliştirilmiş bir React Native uygulamasıdır. U
 - **Video Kırpma:** Seçilen videodan 5 saniyelik segment belirlenebilir.
 - **Metadata Ekleme:** Kırpılan videoya isim ve açıklama eklenir.
 - **Video Listesi:** Kırpılan videolar modern bir arayüzde listelenir.
-- **Video Detay & Düzenleme:** Listedeki bir videoya tıklayarak detayına gider, düzenleme ve silme işlemleri yapılabilir.
-- **Animasyonlar:** Reanimated ile video kartlarında fade-in ve slide-up animasyonları.
+- **Video Detay & Düzenleme:** Listedeki bir video'ya bağlı edit butonuna basarak detayına gider, düzenleme ve silme işlemleri yapılabilir.
 
 ---
 
@@ -66,21 +65,4 @@ Bu proje, Expo kullanılarak geliştirilmiş bir React Native uygulamasıdır. U
   Görseller, videolar ve diğer medya dosyaları.
 
 ---
-
-## Kullanım Talimatları
-
-1. **Video Kırpma:**
-   - Ana ekrandaki **"Crop Video"** butonuna basarak kırpma modalını açın.
-   - Galeriden bir video seçin.
-   - 5 saniyelik segmenti slider yardımıyla belirleyip, **"Next"** butonuna basın.
-
-2. **Metadata Ekleme:**
-   - Kırpılan videoya **isim** ve **açıklama** girin.
-   - "Crop Video" butonuna basarak videoyu kaydedin.
-   - Kırpılan video, ana ekranda listede görüntülenir.
-
-3. **Video Düzenleme & Silme:**
-   - Listedeki bir videoya dokunarak detay ekranına gidin.
-   - Videonun ismini, açıklamasını güncelleyebilir veya videoyu silebilirsiniz.
-   - 
 
