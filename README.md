@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
+# Video Crop App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bu proje, Expo kullanılarak geliştirilmiş bir React Native uygulamasıdır. Uygulama, kullanıcıların galeriden video seçip, videodan **5 saniyelik bir segment** kırparak bu kırpılmış videolara **isim ve açıklama** eklemesine ve kaydedilen videoları listelemesine olanak tanır.
 
-## Get started
+---
 
-1. Install dependencies
+## Özellikler
+
+- **Video Seçme:** Kullanıcı galeriden video seçebilir.
+- **Video Kırpma:** Seçilen videodan 5 saniyelik segment belirlenebilir.
+- **Metadata Ekleme:** Kırpılan videoya isim ve açıklama eklenir.
+- **Video Listesi:** Kırpılan videolar modern bir arayüzde listelenir.
+- **Video Detay & Düzenleme:** Listedeki bir video'ya bağlı edit butonuna basarak detayına gider, düzenleme ve silme işlemleri yapılabilir.
+
+---
+
+## Kurulum
+
+1. **Projeyi İndirin veya Klonlayın:**
+
+   ```bash
+   git clone <repo-url>
+   cd video-crop-app
+   ```
+
+2. **Bağımlılıkları Yükleyin:**
 
    ```bash
    npm install
    ```
-
-2. Start the app
-
+   veya
    ```bash
-    npx expo start
+   yarn install
    ```
 
-In the output, you'll find options to open the app in a
+3. **Uygulamayı Başlatın:**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   npx expo start
+   ```
+   Komutu çalıştırdıktan sonra, Expo geliştirme arayüzü açılır.  
+   Android Emülatörü, iOS Simülatörü veya **Expo Go** ile uygulamayı test edebilirsiniz.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   Ayrıca, github releases sekmesinden android development build'ni indirip android emülatöre kurarak, sonrasında npx expo -> open android ile projeyi başlatabilirsiniz.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Dosya Yapısı
 
-```bash
-npm run reset-project
-```
+- **app/**  
+  Uygulama ekranları ve Expo Router ile dosya tabanlı yönlendirme dosyaları.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **components/**  
+  - `VideoItem.tsx`: Kırpılan videonun kart arayüzü (düzenleme ve silme butonları).
+  - `CropModalContent.tsx`: Video kırpma modalı (segment seçimi).
+  - `MetadataModalContent.tsx`: Kırpılan video için metadata formu (isim ve açıklama).
 
-## Learn more
+- **store/**  
+  Global state yönetimi (Zustand) için store dosyaları.
 
-To learn more about developing your project with Expo, look at the following resources:
+- **hooks/**  
+  Özel hook'lar (ör. `useCropVideo`).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **assets/**  
+  Görseller, videolar ve diğer medya dosyaları.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
