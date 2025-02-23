@@ -1,4 +1,3 @@
-// hooks/useCropVideo.ts
 import { useMutation } from "@tanstack/react-query";
 import { cropVideo } from "../utils/cropVideo";
 
