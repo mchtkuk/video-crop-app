@@ -45,6 +45,22 @@ Bu proje, Expo kullanılarak geliştirilmiş bir React Native uygulamasıdır. U
 
 ---
 
+
+##  Kullanılan Temel Teknolojiler
+- **Expo**: React Native uygulamasının temel geliştirme ortamı.
+- **Expo Router**: Dosya tabanlı yönlendirme (navigation) sistemi.
+- **Zustand**: Global state yönetim çözümü.
+- **Tanstack Query (React Query)**: Asenkron işlemleri (FFMPEG kırpma) yönetmek için.
+- **FFMPEG**: Video işlemleri (kırpma) için temel kütüphane (`ffmpeg-kit-react-native`).
+- **NativeWind**: Tailwind benzeri modern stillendirme.
+- **Expo Video**: Video oynatma ve önizleme (veya benzeri çözümler).
+
+## Kullanılan Ek Teknolojiler
+- **Yup**: Form validasyonu için şema tanımlama.
+- **React Hook Form**: Form yönetimi, validasyon ve hata kontrolü.
+
+
+
 ## Dosya Yapısı
 
 - **app/**  
